@@ -231,16 +231,30 @@
       <p class="htmlacademy"><a href="htmlacademy.ru">Разработано в HTML Академии</a></p>
     </footer>
 
-    <section class="modal write-us">
+    <section class="modal contact-form">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <button class="close">x</button>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="contact-name">Ваше имя:</label>
+            <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="contact-email">Ваш e-mail:</label>
+            <input id="contact-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="contact-message">Текст письма:</label>
+            <textarea rows="3" id="contact-message" name="message" placeholder="В свободной форме">
+          </p>
+          <button class="btn btn-send"  type="submit">Отправить</button>
+        </form>
+      <button class="close">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как добраться</h2>
       <img src="#" alt="г. Москва, ул. Строителей, 15">
-      <button class="close">x</button>
+      <button class="close">Закрыть</button>
     </section>
 
   </body>
